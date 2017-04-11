@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.github.roddunne.mandelbrot">
+
+    <!-- Set isGame=true to put the app in Game row -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Leanback"
+        android:banner="@drawable/banner"
+        android:isGame="true"
+        android:screenOrientation="landscape"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        >
+
+        <activity android:name="com.github.roddunne.mandelbrot.MainActivity"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <!-- LEANBACK_LAUNCHER must be declared to make your app visible on TV Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- banner image (320x180px) must be set if it includes leanback launcher intent filter-->
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <!-- If you set the required attribute value to true, your app will run only on devices that use the Leanback UI -->
+    <uses-feature android:name="android.software.leanback" android:required="false" />
+
+    <!-- Touchscreen must be unrequired, BlueTooth mouse should still work though  -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+
+</manifest>
