@@ -59,12 +59,15 @@ The application does not utilize the FireStick remote for navigation.
 
 The FireStick is almost a hundred times slower than an Android emulator running on a 3.3GHz Intel i5.  All of the time is being spent in the basic calculation loops, i.e floating point unit performance.
 
-The application uses only one worker thread, whereas the FireStick 2 has four cores.  
+The application uses only one worker thread, whereas the FireStick 2 has four cores that could be used.  Note the MT8173 has mismatched cores, so two are faster.
+
+These cores may also have half-width FPUs, which could be the main reason for this problem.  We need to investigate whether floats would be faster than doubles.
 
 
 ### Credits
 
 The basic mathematical equation and Escape Time Algorithm are described on the Wikipedia page https://en.wikipedia.org/wiki/Mandelbrot_set.
+
 Periodicity checking and border edge checking (the more advanced version of interpolation) are also described, in brief, there.
 
 ### License
