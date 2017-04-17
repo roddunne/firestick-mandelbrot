@@ -51,6 +51,7 @@ The application permits zooming in approximately fifty times, before it runs out
 ### Known Issues
 
 The application is hard-coded to TVs (Android devices) running landscape orientation at 1920 x 1080 resolution.
+
 The application does not utilize the FireStick remote for navigation.
 
 ### Future Improvements
@@ -61,7 +62,7 @@ The FireStick is almost a hundred times slower than an Android emulator running 
 
 The application uses only one worker thread, whereas the FireStick 2 has four cores that could be used.  Note the MT8173 has mismatched cores, so two are faster.
 
-These cores may also have half-width FPUs, which could be the main reason for this problem.  We need to investigate whether floats would be faster than doubles.
+We need to investigate whether floats would be possibly faster than doubles, without introducing too much imprecision.
 
 
 ### Credits
