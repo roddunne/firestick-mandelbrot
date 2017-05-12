@@ -4,6 +4,8 @@
 
 ### Motivation 
 
+Inspired by Sverrir Berg's go example.
+
 Weekend effort to get a basic application onto my new Amazon Fire Stick 2.
 
 ### High Level Build Instructions
