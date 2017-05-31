@@ -2,9 +2,11 @@
 
 ### Description
 
+This is a Mandelbrot set visualization application, intended to be run on an Amazon Firestick 2.
+
 ### Motivation 
 
-Inspired by Sverrir Berg's go example.
+Inspired by Sverrir Berg's go example.  https://github.com/sverrirab/mandelbrot-go
 
 Weekend effort to get a basic application onto my new Amazon Fire Stick 2.
 
@@ -60,7 +62,7 @@ The application does not utilize the FireStick remote for navigation.
 
 ##### Horrendous Performance
 
-The FireStick is almost a hundred times slower than an Android emulator running on a 3.3GHz Intel i5.  All of the time is being spent in the basic calculation loops, i.e floating point unit performance.
+The FireStick is almost a hundred times slower than an Android emulator running on a 3.3GHz Intel i5.  All of the time is being spent in the basic calculation loops, i.e. floating point unit performance.
 
 The application uses only one worker thread, whereas the FireStick 2 has four cores that could be used.  Note the MT8173 has mismatched cores, so two are faster.
 
