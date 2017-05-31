@@ -2,13 +2,13 @@
 
 ### Description
 
-This is an Android TV application, for visualizing the Mandelbrot set, intended to be run on an Amazon Firestick 2.
+This is an Android TV application, for visualizing the Mandelbrot set, intended to be run on an Amazon FireStick 2.
 
 ### Motivation 
 
 Inspired by Sverrir Berg's go example.  https://github.com/sverrirab/mandelbrot-go
 
-Weekend effort to get a basic application onto my new Amazon Fire Stick 2.
+Weekend effort to get a basic application onto my new Amazon FireStick 2.
 
 ### High Level Build Instructions
 
