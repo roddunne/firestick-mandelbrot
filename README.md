@@ -18,7 +18,7 @@ Allow Android Studio to update any files to match your local Gradle, SDK tools a
 Build the APK file.  
 Note the FULL_PATH_OF_THE_APK_FILE.apk  
 
-_These instructions were last tested with the following configuration:
+_These instructions were last tested with the following configuration:  
 Android Studio 2.3.1 Build AI-162.3871768  
 Platform version API 25 7.1.1  
 Android SDK tools 26.0.1  
@@ -57,6 +57,8 @@ The application permits zooming in approximately fifty times, before it runs out
 The application is hard-coded to TVs (Android devices) running landscape orientation at 1920 x 1080 resolution.
 
 The application does not utilize the FireStick remote for navigation.
+
+Sideloading the APK onto the FireStick will result in the incorrect app icon being displayed.  The correct icon will only be used if the app is installed from the app store.
 
 ### Future Improvements
 
