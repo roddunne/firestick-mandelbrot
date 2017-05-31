@@ -2,7 +2,7 @@
 
 ### Description
 
-This is a Mandelbrot set visualization application, intended to be run on an Amazon Firestick 2.
+This is a Mandelbrot set visualization Android TV application, intended to be run on an Amazon Firestick 2.
 
 ### Motivation 
 
