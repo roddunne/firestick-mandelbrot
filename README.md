@@ -12,44 +12,44 @@ Weekend effort to get a basic application onto my new Amazon Fire Stick 2.
 
 ### High Level Build Instructions
 
-Clone the git repo.
-Import the mandelbrot-firestick project into Android Studio.  
+Clone the git repo.  
+Import the mandelbrot-firestick project into Android Studio.   
 Allow Android Studio to update any files to match your local Gradle, SDK tools and Platform versions, which will most likely be newer than the source version specifies.  
-Build the APK file.
-Note the FULL_PATH_OF_THE_APK_FILE.apk
+Build the APK file.  
+Note the FULL_PATH_OF_THE_APK_FILE.apk  
 
 _These instructions were last tested with the following configuration:
-Android Studio 2.3.1 Build AI-162.3871768
-Platform version API 25 7.1.1
-Android SDK tools 26.0.1
-Gradle 3.3_
+Android Studio 2.3.1 Build AI-162.3871768  
+Platform version API 25 7.1.1  
+Android SDK tools 26.0.1  
+Gradle 3.3_  
 
 ### Installation
 
 Assumes the development machine and Amazon FireStick are on the same local subnet.
 
-On the Amazon FireStick make sure that from the Settings you have enabled both developer options "ADB debugging" and "Allow from Unknown Sources"
-From the Network settings, make a note of the IP_ADDRESS_OF_THE_FIRESTICK
+On the Amazon FireStick make sure that from the Settings you have enabled both developer options "ADB debugging" and "Allow from Unknown Sources"  
+From the Network settings, make a note of the IP_ADDRESS_OF_THE_FIRESTICK  
 
-From the development machine, open a command prompt in the platform-tools directory of the Android SDK.
-Execute the following three commands:
-adb start-server
-adb connect IP_ADDRESS_OF_THE_FIRESTICK
-adb install FULL_PATH_OF_THE_APK_FILE.apk
+From the development machine, open a command prompt in the platform-tools directory of the Android SDK.  
+Execute the following three commands:  
+adb start-server  
+adb connect IP_ADDRESS_OF_THE_FIRESTICK  
+adb install FULL_PATH_OF_THE_APK_FILE.apk  
 
 This will copy the APK file across onto the FireStick.
 
-_These instructions were last tested with the following configuration:
-Android Debug Bridge version 1.0.39_
+_These instructions were last tested with the following configuration:  
+Android Debug Bridge version 1.0.39_  
 
 ### Usage
 
-The application requires a BlueTooth mouse be paired to the FireStick.
+The application requires a BlueTooth mouse be paired to the FireStick.  
 This should provide a white circle (pseudo-touch) cursor.
 
 Launch the Mandelbrot application from the FireStick launcher using the FireStick remote.  It can be found in the Your Applications sub-page.
 
-Clicking the mouse will zoom the view, by a factor of two, re-centered at the cursor location.
+Clicking the mouse will zoom the view, by a factor of two, re-centered at the cursor location.  
 The application permits zooming in approximately fifty times, before it runs out of precision.
 
 ### Known Issues
