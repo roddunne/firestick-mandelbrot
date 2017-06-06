@@ -4,6 +4,10 @@
 
 This is an Android TV application, for visualizing the Mandelbrot set, intended to be run on an Amazon FireStick 2.
 
+### Screen Capture
+
+![alt tag](screenshot.png)
+
 ### Motivation 
 
 Inspired by Sverrir Berg's go example.  https://github.com/sverrirab/mandelbrot-go
