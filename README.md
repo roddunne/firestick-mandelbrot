@@ -6,7 +6,7 @@ This is an Android TV application, for visualizing the Mandelbrot set, intended 
 
 ### Screen Capture
 
-![alt tag](screenshot.png)
+![screen shot from adb](screenshot.png)
 
 ### Motivation 
 
