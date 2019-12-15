@@ -23,10 +23,9 @@ Build the APK file.
 Note the FULL_PATH_OF_THE_APK_FILE.apk  
 
 _These instructions were last tested with the following configuration:  
-Android Studio 2.3.1 Build AI-162.3871768  
-Platform version API 25 7.1.1  
-Android SDK tools 26.0.1  
-Gradle 3.3_  
+Android Studio 3.5.2  
+
+sign_and_send_pubkey: signing failed: agent refused operation
 
 ### Installation
 
